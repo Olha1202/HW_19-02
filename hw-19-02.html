@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="4" style="width: 100%;">
+<label for="search">
+    Search Google:    
+    </label>
+<input type="search" id="search">
+<input type="submit" value="Search">
+<br><br>
+<table border="4" style="width: 100%;">
 <thead>
 <tr>
 <th>
@@ -59,65 +65,35 @@
     </label>
     <input type="password" id="password">
     <br><br>
+    <label for="email">
+        email
+    </label>
+    <input type="email" id="email">
+    <br><br>
+    <label for="color">
+       choose a color
+    </label>
+    <input type="color" id="color">
+    <br><br>
+    <label for="birthday">
+    birthday
+    </label>    
+    <input type="date" id="birthday">    
+    <br><br>
+    <label for="userfile">
+    select a file:
+    </label>
+    <input type="file" id="userfile" name="userfile">
+    <br><br>
     <label for="coment">
         coment text
     </label>
     <textarea  id="coment" cols="100" rows="5"></textarea>
     <br>
     <br>
-        <select name="select" id="select">
-            <option value="1">Chose optio 1</option>
-            <option value="2">Chose optio 2</option>
-            <option value="3">Chose optio 3</option>
-        </select>
-        <br>
-               <div>
-            <label for="selfdelivery">
-                Self delivery
-            </label>
-            <input type="radio" checked name="delivery" id="selfdelivery">
-        </div>
-        <div>
-            <label for="Boxdelivery">
-                Box delivery
-            </label>
-            <input type="radio" name="delivery" id="Boxdelivery">
-        </div>
-        <h5>
-            Pizza topings
-        </h5>
-        <div>
-            <label for="cheese">
-                Cheese toping
-            </label>
-            <input type="checkbox" name="cheese" id="cheese">
-        </div>
-        <br>
-        <div>
-            <label for="mashrooms">
-                mashrooms toping
-            </label>
-            <input disabled type="checkbox" name="mashrooms" id="mashrooms">
-        </div>
-        <br>
-        <div>
-            <label for="meate">
-                meate toping
-            </label>
-            <input type="checkbox" name="meate" id="meate">
-        </div>
-        <br>
-        <button disabled >
-            Sipmle button
-        </button>
-        <input type="submit" value="Submit data from form">
-        <input type="reset" value="Reset form">
+    <input type="button" onclick="alert('OK!')" value="Submit">
+    
         
-        <div>
-            <label for="color">
-               color
-            </label>
-            <input type="color" id="color">
 </form>
 </body>
 </html>
